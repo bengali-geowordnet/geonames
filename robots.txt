@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /error_log/*
+Disallow: /cgi-bin/*
+Disallow: /.well-known/*
+Disallow: /system/*
