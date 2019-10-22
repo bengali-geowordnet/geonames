@@ -59,7 +59,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | the query builder class.
 */
 
-$active_group = 'server';
+/* For Development you may use the local sqlite db
+|  In development mode, uncomment the following line
+*/
+//$active_group = 'development';
+
+
+$active_group = 'production';
 $query_builder = TRUE;
 
 $db['default'] = array(
@@ -84,7 +90,7 @@ $db['default'] = array(
 	'save_queries' => TRUE
 );
 
-$db['server'] = array(
+$db['production'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'farhanar_geoname',
@@ -105,4 +111,28 @@ $db['server'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
-
+/*
+| SQLite3 in CodeIgniter 3.0.6
+| Ref: https://stackoverflow.com/a/37088960/3148856
+*/
+$db['development'] = array(
+	'dsn'	=> '',
+	'hostname' => '',
+	'username' => '',
+	'password' => '',
+	'database' => './application/database/geonamesSQLite.db',
+	'dbdriver' => 'sqlite3',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
