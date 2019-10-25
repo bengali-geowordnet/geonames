@@ -8,16 +8,16 @@
     <meta name="author" content="Farhan Ar Rafi">
     <meta name="google-site-verification" content="edLVCRUdGazbXTG9zZ-odobEjdMlmPUFSG30Iz98WRU" />
     
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="<?php echo base_url("assets/favicon.ico");?>">
 
     <title>Bengali Geonames</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url("assets/css/bootstrap.min.css");?>" rel="stylesheet">
   <!-- Custom styles for this template -->
-    <link href="../assets/css/cover.css" rel="stylesheet">
+    <link href="<?php echo base_url("assets/css/cover.css");?>" rel="stylesheet">
 
-    <script src="../assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="<?php echo base_url("assets/css/bootstrap.min.css");?>"></script>
 
   </head>
 
@@ -70,9 +70,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url("assets/js/bootstrap.min.js");?>"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="<?php echo base_url("assets/js/ie10-viewport-bug-workaround.js");?>"></script>
   </body>
 </html>
 

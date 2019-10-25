@@ -17,8 +17,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$allowed_domains = array('geonames.farhanarrafi.com', 'app.farhanarrafi.com');
-$default_domain  = 'geonames.farhanarrafi.com';
+$allowed_domains = array('app.farhanarrafi.com');
+$default_domain  = 'app.farhanarrafi.com';
 
 if (in_array($_SERVER['HTTP_HOST'], $allowed_domains, TRUE))
 {
@@ -31,11 +31,11 @@ else
 
 if ( ! empty($_SERVER['HTTPS']))
 {
-        $config['base_url'] = 'https://'.$domain;
+        $config['base_url'] = 'https://'.$domain.'/geonames/';
 }
 else
 {
-        $config['base_url'] = 'http://'.$domain;
+        $config['base_url'] = 'http://'.$domain.'/geonames/';
 }
 
 /*
