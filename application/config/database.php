@@ -65,14 +65,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //$active_group = 'development';
 
 
-$active_group = 'development';
+$active_group = 'production';
 $query_builder = TRUE;
 
 $db['production'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'farhanar_geoname_user_1',
-	'password' => 'ce8b597628ee55a66d67dac912458278',
+	'username' => 'farhanar_geonames_user_admin',
+	'password' => 'geonames_user_admin_1234@1234',
 	'database' => 'farhanar_geonames',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
